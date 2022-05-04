@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="/calculator/css/calci.css">
+</head>
+<body>
+    <div class="a">
+    <!-- <form name="calci"> -->
+
+        <input type="text"class="subinput"id="eqn" readonly>
+        <input type="text" name="display" value="0"class="k" id="input">
+        <br><br>
+        <input type="button"value="HC"onclick="clearHistory()">
+        <input type="button" value="HS" onclick="steph()">
+        <br><br>
+        <input type="button" value="7" onclick="getval('7')">
+        <input type="button" value="8" onclick="getval('8')">
+        <input type="button" value="9" onclick="getval('9')">
+        <input type="button" value="*" onclick="getval('*')">
+        <br><br>
+        <input type="button" value="4" onclick="getval('4')">
+        <input type="button" value="5" onclick="getval('5')">
+        <input type="button" value="6" onclick="getval('6')">
+        <input type="button" value="-" onclick="getval('-')">
+        <br><br>
+        <input type="button" value="1" onclick="getval('1')">
+        <input type="button" value="2" onclick="getval('2')">
+        <input type="button" value="3" onclick="getval('3')">
+        <input type="button" value="+" onclick="getval('+')">
+        <br><br>
+        <input type="button" value="%" onclick="getval('%')">
+        <input type="button" value="0" onclick="getval('0')">
+        <input type="button" value="." onclick="getval('.')">
+        <input type="button" value="=" onclick="ans('=')">
+        <br><br>
+        <input type="button" value="/" onclick="getval('/')">
+        <input type="button" value="C" onclick="del('C')">
+       <input type="reset"name="reset" onclick="clearinput()">
+    </div>
+    <div class="H">
+        <h2 style="color: bisque;">History</h2>
+        <div id="history">
+            </div>
+    </div>
+    <script src="js/calci.js"></script>
+</body>
+</html>
